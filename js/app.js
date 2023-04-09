@@ -78,12 +78,12 @@ if (ScrollTrigger.isTouch == 1) {
     })
     let about_photos = gsap.utils.toArray('.photo')
     about_photos.forEach(item => {
-        gsap.fromTo(item, { y: 0 }, {
-            y: -800,
+        gsap.fromTo(item, { y: 50, opacity:1 }, {
+            y: -1400, opacity:0,
             scrollTrigger: {
                 trigger: item,
-                start: '100',
-                end: 'top',
+                start: '200',
+                end: '800',
                 scrub: true
             }
         })
