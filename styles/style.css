@@ -1,0 +1,169 @@
+/*RESET*/
+* {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*MAIN COLORS AND OTHER*/
+:root {
+    --color-header: #0050FF;
+    --color-text: #9ac0d3;
+    --color-h1:white;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(fonts/Montserrat-ExtraBold.ttf);
+}
+
+html {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-size: calc(100vw / 700 * 10); }
+@media (max-width: 1024px) {
+    html {
+        font-size: calc(100vw / 1920 * 10); } }
+@media (max-width: 600px) {
+    html {
+        font-size: calc(100vw / 700 * 10); }
+}
+
+
+body{
+    background-image: url("img/bg.jpg");
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.content__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background-color: #0050FF;*/
+}
+.logo{
+    width: 80vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rebeccapurple;*/
+}
+.logo > img{
+    width: 50rem;
+    height: 50rem;
+}
+.scroll__down{
+    max-width: 80vw;
+    max-height: 7vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.scroll__down > img{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+
+    animation: arrow 2s linear infinite;
+}
+
+
+.tmp{
+    height: 900vh;
+    width: 100vh;
+    /*background-color: rebeccapurple;*/
+}
+.tmp > h1{
+    max-width: 10vw;
+    margin-left: 4vw;
+    margin-top: 50vw;
+
+    color: var(--color-h1);
+    font-size: 15rem;
+    font-family: Montserrat-Bold;
+
+}
+
+.portfolio_right{
+    position: relative;
+    margin-top: 60rem;
+    width: 100vw;
+    height: 60vh;
+    /*background-color: aqua;*/
+}
+.portfolio_left{
+    /*background-color: bisque;*/
+    position: relative;
+    height: 60vh;
+    margin-top: 60rem;
+    width: 100vw;
+}
+.portfolio_left > img{
+    position: absolute;
+    left: 4vw;
+}
+
+.portfolio_right > img{
+    position: absolute;
+    right: 4vw;
+}
+
+.photo{
+    width: 35rem;
+
+    border-radius: 50%;
+    background-color: white;
+
+    z-index: 3;
+}
+.txt_l{
+    position: absolute;
+    max-width: 80vw;
+    left: 4vw;
+    top: 30vh;
+}
+.txt_r{
+    position: absolute;
+    max-width: 80vw;
+    right: 4vw;
+    top: 30vh;
+    text-align: right;
+}
+
+.name{
+    font-size: 10rem;
+    color: var(--color-h1);
+    font-family: Montserrat-Bold;
+}
+.about_person{
+    color: var(--color-text);
+    font-size: 5rem;
+    font-family: Montserrat-Regular;
+}
