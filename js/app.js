@@ -53,7 +53,7 @@ if (ScrollTrigger.isTouch == 1) {
 
     let about_txt_l = gsap.utils.toArray('.txt_l')
     about_txt_l.forEach(item => {
-        gsap.fromTo(item, { opacity: 0, y:0 }, {
+        gsap.fromTo(item, { opacity: 0.9, y:0 }, {
             opacity: 1, y:-400,
             scrollTrigger: {
                 trigger: item,
@@ -66,7 +66,7 @@ if (ScrollTrigger.isTouch == 1) {
 
     let about_txt_r = gsap.utils.toArray('.txt_r')
     about_txt_r.forEach(item => {
-        gsap.fromTo(item, { opacity: 0, y:0 }, {
+        gsap.fromTo(item, { opacity: 0.9, y:0 }, {
             opacity: 1, y:-400,
             scrollTrigger: {
                 trigger: item,

@@ -10,8 +10,8 @@
 
 /*MAIN COLORS AND OTHER*/
 :root {
-    --color-header: #0050FF;
-    --color-text: #9ac0d3;
+    --color-accent-text: #8bd9ff;
+    --color-text: #d2f0ff;
     --color-h1:white;
 }
 
@@ -27,7 +27,14 @@
     font-family: Montserrat-ExtraBold;
     src: url(fonts/Montserrat-ExtraBold.ttf);
 }
-
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(fonts/Montserrat-Italic.ttf);
+}
 html {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -44,7 +51,7 @@ html {
 body{
     background-image: url("img/bg.jpg");
     width: 100vw;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     overflow-x: hidden;
 }
 .content__main{
@@ -96,7 +103,7 @@ body{
 
 
 .tmp{
-    height: 900vh;
+    /*height: 900vh;*/
     width: 100vh;
     /*background-color: rebeccapurple;*/
 }
@@ -145,25 +152,58 @@ body{
 }
 .txt_l{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     max-width: 80vw;
     left: 4vw;
     top: 30vh;
 }
 .txt_r{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
     max-width: 80vw;
     right: 4vw;
     top: 30vh;
     text-align: right;
 }
+.txt_r > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5rem;
+}
+.txt_r > div > img{
+   margin-left: 5rem;
+}
+
+.txt_l > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5rem;
+}
+.txt_l > div > img{
+    margin-right: 5rem;
+}
 
 .name{
-    font-size: 10rem;
+    font-size: 9rem;
     color: var(--color-h1);
     font-family: Montserrat-Bold;
 }
 .about_person{
     color: var(--color-text);
     font-size: 5rem;
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Medium;
+}
+.about_person_quote{
+    margin-top: 3rem;
+    color: var(--color-accent-text);
+    font-size: 3rem;
+    font-family: Montserrat-Italic;
 }
