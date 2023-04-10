@@ -90,6 +90,27 @@ if (ScrollTrigger.isTouch == 1) {
     })
 
 
+    gsap.fromTo('.hd_R', {x:200 }, {
+        x:0,
+        scrollTrigger: {
+            trigger: '.hd_R',
+            start: '-1100',
+            end: '-100',
+            scrub: true
+        }
+    })
+
+
+    // gsap.fromTo('.about_mid', {y:-2000}, {
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: '.about_mid',
+    //         start: '2000',
+    //         end: '0',
+    //         scrub: true
+    //     }
+    // })
+
 
     // let tmp_items = gsap.utils.toArray('.tmp > *')
     // tmp_items.forEach(item => {
