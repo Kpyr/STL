@@ -5,6 +5,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    user-select: none;
 }
 
 
@@ -57,6 +58,10 @@ body{
     width: 100vw;
     /*min-height: 100vh;*/
     overflow-x: hidden;
+    user-select: none;
+}
+body > *{
+    user-select: none;
 }
 .content__main{
     display: flex;
