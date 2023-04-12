@@ -8,7 +8,14 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 //     backDelay: 1500,
 // })
 
-
+if (ScrollTrigger.isTouch !== 1){
+    ScrollSmoother.create({
+        wrapper: '.wrapper__main',
+        content: '.content__main',
+        smooth: 1.5,
+        effects: true
+    })
+}
 
 // if (ScrollTrigger.isTouch == 1) {
 

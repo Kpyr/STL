@@ -86,6 +86,24 @@ body > *{
     /*align-items: center;*/
     /*background-color: #0050FF;*/
 }
+
+.alert{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.alert > h1{
+    text-align: center;
+    font-family: Montserrat-Medium;
+    color: var(--color-h1);
+    font-size: 4rem;
+}
+
+
 .logo{
     width: 80vw;
     height: 80vh;
@@ -328,8 +346,34 @@ body > *{
     /*background-color: rebeccapurple;*/
 }
 
+/*ВРЕМЯНКА*/
+/*.header, .about_us, .tmp{*/
+/*    display: none;*/
+/*}*/
+
+
+
 .projects{
     width: 90vw;
     height: 100vh;
-    background-color: rebeccapurple;
+    /*background-color: rebeccapurple;*/
+}
+.projects > h1{
+    max-width: 92vw;
+    margin-left: 4vw;
+    margin-top: 50vw;
+    text-align: right;
+
+    color: var(--color-h1);
+    font-size: 10rem;
+    font-family: Montserrat-Bold;
+}
+
+.projects__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    width: 90vw;
 }
