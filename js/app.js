@@ -12,12 +12,12 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 // if (ScrollTrigger.isTouch == 1) {
 
-    ScrollSmoother.create({
-        wrapper: '.wrapper__main',
-        content: '.content__main',
-        smooth: 1.5,
-        effects: true
-    })
+    // ScrollSmoother.create({
+    //     wrapper: '.wrapper__main',
+    //     content: '.content__main',
+    //     smooth: 1.5,
+    //     effects: true
+    // })
 
 
     gsap.fromTo('.logo', { scale:1, y:0 }, {
