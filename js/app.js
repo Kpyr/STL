@@ -49,7 +49,7 @@ if (ScrollTrigger.isTouch == 1) {
         }
     })
 
-
+    // team section
 
     let about_txt_l = gsap.utils.toArray('.txt_l')
     about_txt_l.forEach(item => {
@@ -89,7 +89,7 @@ if (ScrollTrigger.isTouch == 1) {
         })
     })
 
-
+    // About section
     gsap.fromTo('.hd_R', {x:200 }, {
         x:0,
         scrollTrigger: {
@@ -100,6 +100,88 @@ if (ScrollTrigger.isTouch == 1) {
         }
     })
 
+    let about_left = gsap.utils.toArray('.about_left')
+    about_left.forEach(item => {
+        gsap.fromTo(item, { x: -50 }, {
+            x:0,
+            scrollTrigger: {
+                trigger: item,
+                start: '-750',
+                end: '100',
+                scrub: true
+            }
+        })
+    })
+
+    let about_mid = gsap.utils.toArray('.about_mid')
+    about_mid.forEach(item => {
+        gsap.fromTo(item, { scale:0.001 }, {
+            scale:1,
+            scrollTrigger: {
+                trigger: item,
+                start: '-1050',
+                end: '-500',
+                scrub: true
+            }
+        })
+    })
+
+
+    let about_right = gsap.utils.toArray('.about_right')
+    about_right.forEach(item => {
+        gsap.fromTo(item, { x: 50 }, {
+            x:0,
+            scrollTrigger: {
+                trigger: item,
+                start: '-750',
+                end: '100',
+                scrub: true
+            }
+        })
+    })
+
+
+
+    // while (true){
+    //     autoH()
+    // }
+    //
+    //
+    // const texts = document.querySelectorAll('.about__block');
+    //
+    // for (let i = 1; i < texts.length; i++){
+    //     texts[i].classList.add('hide');
+    // }
+    //
+    // function autoH(){
+    //
+    //     for (let i = 1; i < texts.length; i++){
+    //         let H1 = texts[i].style.height;
+    //         let H2 = document.querySelector(".about_left").style.height;
+    //     }
+    //
+    //     // let H1 = document.querySelector(".about_left").style.height;
+    //     // let H2 = document.querySelector(".about_left").style.height;
+    //
+    //     if (H1 > H2){
+    //         document.querySelector(".")
+    //     }
+    // }
+
+    // function activeRight(){
+    //     // document.querySelector("#level__1").classList.toggle("active")
+    //     document.querySelector("#level__3").classList.add("active");
+    //     document.querySelector("#level__2").classList.remove("active");
+    //     document.querySelector("#level__1").classList.remove("active");
+    //     handleButtonClick1();
+    //
+    //     document.querySelector(".easy").style.display = "none";
+    //     document.querySelector(".medium").style.display = "none";
+    //     document.querySelector(".hard").style.display = "flex";
+    //
+    //     document.querySelector(".mid_b > rect").style.fillOpacity = "1";
+    //     document.querySelector(".right_b > rect").style.fillOpacity = "1";
+    // }
 
     // gsap.fromTo('.about_mid', {y:-2000}, {
     //     y: 0,

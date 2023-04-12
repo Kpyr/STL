@@ -14,6 +14,10 @@
     --color-text: #d2f0ff;
     --color-h1:white;
 }
+/*WILL CHANGE*/
+.content__main, .logo, .scroll__down, .hd, .txt_l, .txt_r, .photo, .hd_R, .about_left, .about_mid, .about_right {
+    will-change: transform;
+}
 
 @font-face {
     font-family: Montserrat-Regular;
@@ -234,23 +238,84 @@ body{
 .about_wrapper{
     /*overflow-y: hidden;*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 
     width: 90vw;
-    height: 200vh;
+    /*height: 200vh;*/
     margin-top: 20rem;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
-.about_left{
-    width: 44.5vw;
-    height: 200vh;
+/*.about_left{*/
+/*    width: 44.5vw;*/
+/*    height: 200vh;*/
+/*}*/
+/*.about_mid{*/
+/*    width: 1vw;*/
+/*    background-color: white;*/
+/*    height: 200vh;*/
+/*}*/
+/*.about_right{*/
+/*    width: 44.5vw;*/
+/*    height: 200vh;*/
+/*}*/
+
+.about__block{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: 95vw;
+
+    letter-spacing: 1rem;
+}
+
+.about_left, .about_right{
+    width: 47vw;
+    color: white;
+    font-size: 3rem;
+    font-family: Montserrat-Regular;
+
+    /*padding: 1vw;*/
 }
 .about_mid{
-    width: 1vw;
+    position: absolute;
+    left:49.5%;
+    right:49.5%;
+    top:0;
+    bottom:0;
     background-color: white;
-    height: 200vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about_right{
-    width: 44.5vw;
-    height: 200vh;
+    padding-top: 5rem;
+    padding-left: 3rem;
+
+    text-align: left;
+    /*background-color: white;*/
+}
+.about_left{
+    padding-top: 5rem;
+    padding-right: 3rem;
+
+    text-align: right;
+    /*background-color: rebeccapurple;*/
+}
+
+.projects{
+    width: 90vw;
+    height: 100vh;
+    background-color: rebeccapurple;
 }
