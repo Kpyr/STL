@@ -149,6 +149,35 @@ if (ScrollTrigger.isTouch !== 1){
 
 
 
+
+    gsap.fromTo('.prj__h', {x:200 }, {
+        x:0,
+        scrollTrigger: {
+            trigger: '.prj__h',
+            start: '-1100',
+            end: '-100',
+            scrub: true
+        }
+    })
+
+
+    let projects__block = gsap.utils.toArray('.projects__block')
+
+    projects__block.forEach(item => {
+        gsap.fromTo(item, {y:100, opacity: 0}, {
+            y:0,
+            opacity: 1,
+            scrollTrigger:{
+                trigger: item,
+                start: '-950',
+                end: 'center',
+                scrub: true
+            }
+        })
+    })
+
+
+
     // while (true){
     //     autoH()
     // }

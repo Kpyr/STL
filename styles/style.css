@@ -18,6 +18,7 @@
     --color-text: #d2f0ff;
     --color-h1:white;
     --color-h1-blue:#0050FF;
+    --color-h1-pink:#C22085;
 }
 /*WILL CHANGE*/
 .content__main, .logo, .scroll__down, .hd, .txt_l, .txt_r, .photo, .hd_R, .about_left, .about_mid, .about_right {
@@ -356,7 +357,9 @@ body > *{
 
 .projects{
     width: 90vw;
-    height: 100vh;
+    height: 240vh;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
     /*background-color: rebeccapurple;*/
 }
 .projects > h1{
@@ -364,6 +367,7 @@ body > *{
     margin-left: 4vw;
     margin-top: 50vw;
     text-align: right;
+
 
     color: var(--color-h1);
     font-size: 10rem;
@@ -410,4 +414,45 @@ body > *{
     font-size: 4rem;
     font-family: Montserrat-Regular;
     color: var(--color-h1);
+}
+
+
+.big-a{
+    font-size: 17rem;
+}
+
+
+
+.ft-h{
+    width: 100vw;
+    /*background-color: #0050FF;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: green;*/
+}
+.foot > h1{
+    margin-left: 3rem;
+    color: var(--color-h1);
+    font-family: Montserrat-ExtraBold;
+    font-size: 10rem;
+}
+
+
+.small-h{
+    color: var(--color-h1-blue);
+    font-size: 5rem;
+}
+.ft__marg{
+    margin-left: 10rem;
 }
