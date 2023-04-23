@@ -17,6 +17,7 @@
     --color-accent-text: #8bd9ff;
     --color-text: #d2f0ff;
     --color-h1:white;
+    --color-h1-blue:#0050FF;
 }
 /*WILL CHANGE*/
 .content__main, .logo, .scroll__down, .hd, .txt_l, .txt_r, .photo, .hd_R, .about_left, .about_mid, .about_right {
@@ -376,4 +377,37 @@ body > *{
     align-items: center;
     gap: 4%;
     width: 90vw;
+    /*background-color: white;*/
+    border-radius: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    border-top: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;
+
+    margin-top: 10rem;
+}
+
+#fst{
+
+}
+
+.projects__block > img{
+    width: 100%;
+    margin-top: 5rem;
+    border-radius: 5rem;
+    /*box-shadow: 10px 5px 5px white;*/
+}
+
+.projects__block > h1{
+    font-size: 7rem;
+    font-family: Montserrat-Regular;
+    color: var(--color-h1);
+}
+.projects__block > a{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Montserrat-Regular;
+    color: var(--color-h1);
 }
