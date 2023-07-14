@@ -1,8 +1,79 @@
 @media not (max-width: 700px) {
-    .content__main> *{
+    /*.content__main> *{*/
+    /*    display: none;*/
+    /*}*/
+    /*.alert{*/
+    /*    display: flex;*/
+    /*}*/
+
+
+    .logo > img{
+        width: 25vw;
+    }
+
+    .scroll__down > img{
+        width: 3vw;
+    }
+
+    .about_us > h1{
+        font-size: 10vw;
+    }
+
+
+
+    .about__block{
+        letter-spacing: 1vw;
+    }
+    .about_left, .about_right{
+        font-size: 2vw;
+    }
+
+    .about_mid{
+        width: 0.25vw;
+    }
+
+    .about_mid > img{
+        visibility: hidden;
+    }
+
+
+
+
+    .tmp > h1{
+        width: 51vw;
+        max-width: 55vw;
+        font-size: 10vw;
+    }
+
+
+    .portfolio_left{
+        left: -24vw;
+        width: 100vw;
+        /*background:red;*/
+    }
+    .photo{
+        width: 30vw;
+    }
+    .name{
+        font-size: 7vw;
+    }
+    .about_person{
+        font-size: 3vw;
+    }
+    .txt_r > div > img{
         display: none;
     }
-    .alert{
-        display: flex;
+    .txt_l > div > img{
+        display: none;
     }
+
+
+    .portfolio_right{
+        left: -24vw;
+        width: 100vw;
+    }
+    /*.header{*/
+    /*    visibility: hidden;*/
+    /*}*/
+
 }
